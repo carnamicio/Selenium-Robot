@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210408 14:59:18.346" rpa="false" schemaversion="2">
+<suite id="s1" name="LoginTC" source="C:\Users\Laptop\PycharmProjects\RobotAutomation\TestCases\LoginTC">
+<kw name="Before each test suite" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Test Suite started</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210408 14:59:18.388" level="INFO">Test Suite started</msg>
+<status status="PASS" starttime="20210408 14:59:18.387" endtime="20210408 14:59:18.388"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:18.387" endtime="20210408 14:59:18.388"/>
+</kw>
+<suite id="s1-s1" name="TC 001 Close open Browser" source="C:\Users\Laptop\PycharmProjects\RobotAutomation\TestCases\LoginTC\TC_001_Close_open_Browser.robot">
+<kw name="before each test suite" library="Rescources1" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>before each test suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210408 14:59:18.733" level="INFO">before each test suite</msg>
+<status status="PASS" starttime="20210408 14:59:18.733" endtime="20210408 14:59:18.734"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:18.732" endtime="20210408 14:59:18.734"/>
+</kw>
+<test id="s1-s1-t1" name="TC_001 Browser Start and Close">
+<kw name="Start Browser and Maximize" library="Rescources1" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.facebook.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210408 14:59:18.737" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20210408 14:59:18.736" endtime="20210408 14:59:22.957"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210408 14:59:22.957" endtime="20210408 14:59:23.149"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:18.736" endtime="20210408 14:59:23.150"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<arg>Stevenviersel@home.nl</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210408 14:59:23.151" level="INFO">Typing text 'Stevenviersel@home.nl' into text field 'xpath://input[@name='email']'.</msg>
+<status status="PASS" starttime="20210408 14:59:23.150" endtime="20210408 14:59:23.398"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@type='password']</arg>
+<arg>Svi03021995</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210408 14:59:23.399" level="INFO">Typing text 'Svi03021995' into text field 'xpath://input[@type='password']'.</msg>
+<status status="PASS" starttime="20210408 14:59:23.398" endtime="20210408 14:59:23.567"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210408 14:59:23.568" endtime="20210408 14:59:26.167"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:18.734" endtime="20210408 14:59:26.168"/>
+</test>
+<test id="s1-s1-t2" name="TC_001 klik nieu account">
+<kw name="Start Browser and Maximize" library="Rescources1" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.facebook.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210408 14:59:26.172" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20210408 14:59:26.171" endtime="20210408 14:59:30.373"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210408 14:59:30.374" endtime="20210408 14:59:30.580"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:26.171" endtime="20210408 14:59:30.581"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210408 14:59:30.582" level="INFO">Clicking element 'xpath://a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210408 14:59:32.018" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210408 14:59:31.698" endtime="20210408 14:59:32.018"/>
+</kw>
+<msg timestamp="20210408 14:59:32.021" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="#" ajaxify="/reg/spotlight/" id="u_0_2_hn" data-testid="open-registration-form-button" rel="async"&gt;...&lt;/a&gt; is not clickable at point (962, 433). Other element would receive the click: &lt;div class="_3ixn"&gt;&lt;/div&gt;
+  (Session info: chrome=89.0.4389.114)
+</msg>
+<status status="FAIL" starttime="20210408 14:59:30.582" endtime="20210408 14:59:32.021"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210408 14:59:32.022" endtime="20210408 14:59:35.207"/>
+</kw>
+<status status="FAIL" starttime="20210408 14:59:26.169" endtime="20210408 14:59:35.209">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="#" ajaxify="/reg/spotlight/" id="u_0_2_hn" data-testid="open-registration-form-button" rel="async"&gt;...&lt;/a&gt; is not clickable at point (962, 433). Other element would receive the click: &lt;div class="_3ixn"&gt;&lt;/div&gt;
+  (Session info: chrome=89.0.4389.114)
+</status>
+</test>
+<kw name="after each test suite" library="Rescources1" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>after each test suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210408 14:59:35.214" level="INFO">after each test suite</msg>
+<status status="PASS" starttime="20210408 14:59:35.214" endtime="20210408 14:59:35.214"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:35.213" endtime="20210408 14:59:35.214"/>
+</kw>
+<status status="FAIL" starttime="20210408 14:59:18.388" endtime="20210408 14:59:35.214"/>
+</suite>
+<suite id="s1-s2" name="TEST1" source="C:\Users\Laptop\PycharmProjects\RobotAutomation\TestCases\LoginTC\TEST1.robot">
+<test id="s1-s2-t1" name="TC_001 Browser Start and Close">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url1}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210408 14:59:35.229" level="INFO">Opening browser 'Chrome' to base url 'https://www.destil.nl/'.</msg>
+<status status="PASS" starttime="20210408 14:59:35.228" endtime="20210408 14:59:42.877"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210408 14:59:42.878" endtime="20210408 14:59:43.099"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://div[@class='highlight-blanc padded-medium']/child::p[contains(text(), 'DESTIL is')]</arg>
+<arg>DESTIL is een groothandel voor de bouw en industrie. Wij hebben meer dan 150.000 artikelen onder één dak. In onze webshop ben je elk moment van de dag aan het juiste adres. Maar ook in onze 36 afhaalvestigingen verspreid over Nederland helpen we je graag verder.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20210408 14:59:43.104" level="INFO">Verifying element 'xpath://div[@class='highlight-blanc padded-medium']/child::p[contains(text(), 'DESTIL is')]' contains exact text 'DESTIL is een groothandel voor de bouw en industrie. Wij hebben meer dan 150.000 artikelen onder één dak. In onze webshop ben je elk moment van de dag aan het juiste adres. Maar ook in onze 36 afhaalvestigingen verspreid over Nederland helpen we je graag verder.'.</msg>
+<status status="PASS" starttime="20210408 14:59:43.102" endtime="20210408 14:59:43.177"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:35.227" endtime="20210408 14:59:43.178"/>
+</test>
+<status status="PASS" starttime="20210408 14:59:35.218" endtime="20210408 14:59:43.180"/>
+</suite>
+<kw name="After each test suite" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>Test suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210408 14:59:43.184" level="INFO">Test suite Started</msg>
+<status status="PASS" starttime="20210408 14:59:43.184" endtime="20210408 14:59:43.184"/>
+</kw>
+<status status="PASS" starttime="20210408 14:59:43.184" endtime="20210408 14:59:43.185"/>
+</kw>
+<status status="FAIL" starttime="20210408 14:59:18.348" endtime="20210408 14:59:43.185"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="LoginTC">LoginTC</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="TC 001 Close open Browser">LoginTC.TC 001 Close open Browser</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TEST1">LoginTC.TEST1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
